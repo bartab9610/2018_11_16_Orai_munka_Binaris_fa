@@ -33,6 +33,8 @@ namespace _2018_11_16_OraiMunka_Binaris_fa
                 Kiir(e.jobb);
             }
         }
+        // public STATIC void esetén nem kell "peldany.Kiir(peldany);" HANEM BiFaelen.Kiir(peldany);
+        // this.bal esetén "peldany.Kiir()";
         public void Beszur(BiFaelem e, string ujErtek)
         {
             if (e.ertek.CompareTo(ujErtek) > 0)
