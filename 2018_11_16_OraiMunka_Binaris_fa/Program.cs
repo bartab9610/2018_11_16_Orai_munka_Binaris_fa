@@ -12,7 +12,11 @@ namespace _2018_11_16_OraiMunka_Binaris_fa
         {
             BiFaelem peldany = new BiFaelem("köcsög");
             peldany.Kiir(peldany);
-            Console.ReadKey();
+            Console.WriteLine();
+            peldany.Beszur(peldany, "Váza");
+            peldany.Beszur(peldany, "Csésze");
+            peldany.Kiir(peldany);
+            Console.WriteLine();
         }
     }
 }

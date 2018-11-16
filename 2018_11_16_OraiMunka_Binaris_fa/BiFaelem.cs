@@ -29,5 +29,31 @@ namespace _2018_11_16_OraiMunka_Binaris_fa
                 Kiir(e.jobb);
             }
         }
+        public void Beszur(BiFaelem e, string ujErtek)
+        {
+            if (e.ertek.CompareTo(ujErtek) > 0)
+            {
+                if (e.bal != null)
+                {
+                    Beszur(e.bal, ujErtek);
+                }
+                else
+                {
+                    e.bal = new BiFaelem(ujErtek);
+                }
+            }
+            else if (e.ertek.CompareTo(ujErtek) < 0) 
+            {
+                if (e.jobb != null)
+                {
+                    Beszur(e.jobb, ujErtek);
+                }
+                else
+                {
+                    e.jobb = new BiFaelem(ujErtek);
+                }
+            }
+            else { }
+        }
     }
 }
