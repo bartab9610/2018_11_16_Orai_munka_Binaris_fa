@@ -17,6 +17,9 @@ namespace _2018_11_16_OraiMunka_Binaris_fa
             peldany.Beszur(peldany, "Csésze");
             peldany.Kiir(peldany);
             Console.WriteLine();
+            Console.WriteLine(peldany.Tartalmaz_e(peldany, "Váza"));
+            Console.WriteLine(peldany.Tartalmaz_e(peldany, "Köcsögök"));
+            Console.ReadKey();
         }
     }
 }

@@ -55,5 +55,34 @@ namespace _2018_11_16_OraiMunka_Binaris_fa
             }
             else { }
         }
+        public bool Tartalmaz_e(BiFaelem e, string ertek)
+        {
+            if (e.ertek.CompareTo(ertek) > 0)
+            {
+                if (e.bal != null)
+                {
+                    return Tartalmaz_e(e.bal, ertek);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else if (e.ertek.CompareTo(ertek) < 0)
+            {
+                if (e.jobb != null)
+                {
+                    return Tartalmaz_e(e.jobb, ertek);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
 }
