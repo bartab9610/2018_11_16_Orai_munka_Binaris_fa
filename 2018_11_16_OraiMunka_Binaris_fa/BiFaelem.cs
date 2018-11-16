@@ -14,6 +14,10 @@ namespace _2018_11_16_OraiMunka_Binaris_fa
 
         public BiFaelem(string ertek)
         {
+            /*if (ertek == null)
+            {
+                throw new ArgumentNullException("ertek"); // a paraméterként átadott érték NULL volt
+            }*/
             this.ertek = ertek;
         }
 
